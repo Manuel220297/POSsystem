@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POS System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h2>K</h2>
+            <ul>
+                <li>
+                    <div><a href="https://www.google.com/"><img src="https://img.icons8.com/ios-filled/50/000000/home.png" alt="Home" class="icon"> <span>Home</span></a></div>
+                </li>
+                <li>
+                    <div><a href="https://www.google.com/"><img src="https://img.icons8.com/ios-filled/50/000000/time-machine.png" alt="History" class="icon"> <span>History</span></a></div>
+                </li>
+                <li>
+                    <div><a href="index.html"><img src="https://img.icons8.com/ios-filled/50/000000/bowl-with-spoon.png" alt="Menu" class="icon"> <span>Menu</span></a></div>
+                </li>
+                <li>
+                    <div><a href="https://www.google.com/"><img src="https://img.icons8.com/ios-filled/50/000000/gift.png" alt="Promos" class="icon"> <span>Promos</span></a></div>
+                </li>
+                <li>
+                    <div><a href="https://www.google.com/"><img src="https://img.icons8.com/ios-filled/50/000000/wallet.png" alt="Wallet" class="icon"> <span>Wallet</span></a></div>
+                </li>
+                <li>
+                    <div><a href="https://www.google.com/"><img src="https://img.icons8.com/ios-filled/50/000000/settings.png" alt="Settings" class="icon"> <span>Settings</span></a></div>
+                </li>
+                <li>
+                    <div><a href="https://www.google.com/"><img src="https://img.icons8.com/ios-filled/50/000000/exit.png" alt="Logout" class="icon"> <span>Logout</span></a></div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="content">
+            <div class="category-menu">
+                <label>
+                    <input type="radio" name="category" value="all" checked onclick="filterProducts('all')"> All
+                </label>
+                <label>
+                    <input type="radio" name="category" value="coffee" onclick="filterProducts('coffee')"> Coffee
+                </label>
+                <label>
+                    <input type="radio" name="category" value="juice" onclick="filterProducts('juice')"> Juice
+                </label>
+                <label>
+                    <input type="radio" name="category" value="milkBased" onclick="filterProducts('milkBased')"> Milk Based
+                </label>
+                <label>
+                    <input type="radio" name="category" value="snacks" onclick="filterProducts('snacks')"> Snacks
+                </label>
+                <label>
+                    <input type="radio" name="category" value="dessert" onclick="filterProducts('dessert')"> Dessert
+                </label>
+            </div>
+            <div class="products">
+                <!-- Coffee Products -->
+                    <div class="product coffee">
+                        <img src="https://via.placeholder.com/150" alt="Caramel Frappuccino">
+                        <h3>Caramel Frappuccino</h3>
+                        <p>Price: $3.95</p>
+                        <button class="btn-primary" onclick="addToBilling('Caramel Frappuccino', 3.95)">Add to Billing</button>
+                    </div>
+                    <div class="product coffee">
+                        <img src="https://via.placeholder.com/150" alt="Chocolate Frappuccino">
+                        <h3>Chocolate Frappuccino</h3>
+                        <p>Price: $4.51</p>
+                        <button class="btn-primary" onclick="addToBilling('Chocolate Frappuccino', 4.51)">Add to Billing</button>
+                    </div>
+                    <div class="product coffee">
+                        <img src="https://via.placeholder.com/150" alt="Peppermint Macchiato">
+                        <h3>Peppermint Macchiato</h3>
+                        <p>Price: $5.34</p>
+                        <button class="btn-primary" onclick="addToBilling('Peppermint Macchiato', 5.34)">Add to Billing</button>
+                    </div>
+
+                    <!-- Juice Products -->
+                    <div class="product juice">
+                        <img src="https://via.placeholder.com/150" alt="Orange Juice">
+                        <h3>Orange Juice</h3>
+                        <p>Price: $2.95</p>
+                        <button class="btn-primary" onclick="addToBilling('Orange Juice', 2.95)">Add to Billing</button>
+                    </div>
+                    <div class="product juice">
+                        <img src="https://via.placeholder.com/150" alt="Apple Juice">
+                        <h3>Apple Juice</h3>
+                        <p>Price: $2.50</p>
+                        <button class="btn-primary" onclick="addToBilling('Apple Juice', 2.50)">Add to Billing</button>
+                    </div>
+
+                    <!-- Milk Based Products -->
+                    <div class="product milkBased">
+                        <img src="https://via.placeholder.com/150" alt="Vanilla Latte">
+                        <h3>Vanilla Latte</h3>
+                        <p>Price: $4.00</p>
+                        <button class="btn-primary" onclick="addToBilling('Vanilla Latte', 4.00)">Add to Billing</button>
+                    </div>
+                    <div class="product milkBased">
+                        <img src="https://via.placeholder.com/150" alt="Cappuccino">
+                        <h3>Cappuccino</h3>
+                        <p>Price: $4.25</p>
+                        <button class="btn-primary" onclick="addToBilling('Cappuccino', 4.25)">Add to Billing</button>
+                    </div>
+
+                    <!-- Snacks Products -->
+                    <div class="product snacks">
+                        <img src="https://via.placeholder.com/150" alt="Croissant">
+                        <h3>Croissant</h3>
+                        <p>Price: $2.50</p>
+                        <button class="btn-primary" onclick="addToBilling('Croissant', 2.50)">Add to Billing</button>
+                    </div>
+                    <div class="product snacks">
+                        <img src="https://via.placeholder.com/150" alt="Muffin">
+                        <h3>Muffin</h3>
+                        <p>Price: $2.75</p>
+                        <button class="btn-primary" onclick="addToBilling('Muffin', 2.75)">Add to Billing</button>
+                    </div>
+
+                    <!-- Dessert Products -->
+                    <div class="product dessert">
+                        <img src="https://via.placeholder.com/150" alt="Chocolate Cake">
+                        <h3>Chocolate Cake</h3>
+                        <p>Price: $3.50</p>
+                        <button class="btn-primary" onclick="addToBilling('Chocolate Cake', 3.50)">Add to Billing</button>
+                    </div>
+                    <div class="product dessert">
+                        <img src="https://via.placeholder.com/150" alt="Ice Cream">
+                        <h3>Ice Cream</h3>
+                        <p>Price: $2.99</p>
+                        <button class="btn-primary" onclick="addToBilling('Ice Cream', 2.99)">Add to Billing</button>
+                    </div>
+            </div>
+        </div>
+
+        <div class="billing">
+            <h2>Bills</h2>  
+            <ul id="billingList">
+            </ul>
+            <p><strong>Subtotal:</strong> $<span id="subtotal">0.00</span></p>
+            <button class="btn-primary" onclick="printBill()">Print Bills</button>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

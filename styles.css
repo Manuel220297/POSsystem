@@ -1,0 +1,130 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    padding: 1rem;
+}
+.sidebar {
+    width: 10%;
+    background: #ffffff;
+    color: #000000;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.icon {
+    width: 30px; /* Adjust the width */
+    height: 30px; /* Adjust the height to maintain aspect ratio */
+}
+
+.sidebar button {
+    background: transparent;
+    border: none; /* Removes any border */
+    padding: 0; /* Optional: Removes any padding */
+    cursor: pointer; /* Optional: Adds a pointer cursor */
+}
+.sidebar ul {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Align items vertically */
+    justify-content: top; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    padding: 0;
+    list-style-type: none;
+    height: 100%; /* Ensure it takes full height for vertical centering */
+}
+
+.sidebar li {   
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Adds space between the icon and the text */
+}
+
+.sidebar span {
+    font-size: 16px; /* Adjust the font size of the text */
+    color: #333; /* You can change the text color */
+}
+.content {
+    width: 60%;
+}
+.category-menu {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+.category-menu button {
+    padding: 0.5rem 1rem;
+    background: #a1652c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.products {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+.product {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+}
+.product img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+.billing {
+    width: 20%;
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    border-radius: 8px;
+}
+.billing ul {
+    list-style-type: none;
+    padding: 0;
+}
+.billing li {
+    margin-bottom: 1rem;
+}
+
+.billing-item {
+    display: flex;
+    justify-content: space-between; /* Distribute space between text and button */
+    align-items: center; /* Vertically align text and button */
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.billing-item button {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 0.2rem 0.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem; /* Slightly larger font for the 'X' */
+}
+
+.billing-item button:hover {
+    background-color: #c0392b;
+}
+
+.btn-primary {
+    background: #994f25;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
