@@ -35,8 +35,8 @@
             </ul>
         </div>
 
-        <div class="content">
-            <div class="category-menu">
+        <main class="content">
+            <header class="category-menu">
                 <label>
                     <input type="radio" name="category" value="all" checked onclick="filterProducts('all')"> All
                 </label>
@@ -55,25 +55,125 @@
                 <label>
                     <input type="radio" name="category" value="dessert" onclick="filterProducts('dessert')"> Dessert
                 </label>
-            </div>
+            </header>
             <div class="products">
                 <!-- Coffee Products -->
                     <div class="product coffee">
-                        <img src="https://via.placeholder.com/150" alt="Caramel Frappuccino">
+                        <img src="caramel_frappuccino.jpg" alt="Caramel Frappuccino">
                         <h3>Caramel Frappuccino</h3>
                         <p>Price: $3.95</p>
+                        <div class="options">
+                            <!-- Mood -->
+                            <div class="mood">
+                                <input type="radio" id="hot" name="caramelFrappuccinoMood" value="hot" checked>
+                                <label for="hot">Hot</label>
+                        
+                                <input type="radio" id="cold" name="caramelFrappuccinoMood" value="cold">
+                                <label for="cold">Cold</label>
+                            </div>
+                        
+                            <!-- Size -->
+                            <div class="size">
+                                <input type="radio" id="small" name="caramelFrappuccinoSize" value="small" checked>
+                                <label for="small">S</label>
+                        
+                                <input type="radio" id="medium" name="caramelFrappuccinoSize" value="medium">
+                                <label for="medium">M</label>
+                        
+                                <input type="radio" id="large" name="caramelFrappuccinoSize" value="large">
+                                <label for="large">L</label>
+                            </div>
+                        
+                            <!-- Sugar -->
+                            <div class="sugar">
+                                <input type="radio" id="sugar25" name="caramelFrappuccinoSugar" value="small" checked>
+                                <label for="sugar25">25%</label>
+                        
+                                <input type="radio" id="sugar50" name="caramelFrappuccinoSugar" value="medium">
+                                <label for="sugar50">50%</label>
+                        
+                                <input type="radio" id="sugar75" name="caramelFrappuccinoSugar" value="large">
+                                <label for="sugar75">75%</label>
+                            </div>
+                        
+                            <!-- Ice -->
+                            <div class="ice">
+                                <input type="radio" id="ice25" name="caramelFrappuccinoIce" value="small" checked>
+                                <label for="ice25">25%</label>
+                        
+                                <input type="radio" id="ice50" name="caramelFrappuccinoIce" value="medium">
+                                <label for="ice50">50%</label>
+                        
+                                <input type="radio" id="ice75" name="caramelFrappuccinoIce" value="large">
+                                <label for="ice75">75%</label>
+                            </div>
+                        </div>
                         <button class="btn-primary" onclick="addToBilling('Caramel Frappuccino', 3.95)">Add to Billing</button>
                     </div>
                     <div class="product coffee">
-                        <img src="https://via.placeholder.com/150" alt="Chocolate Frappuccino">
+                        <img src="chocolate_frappuccino.jpg" alt="Chocolate Frappuccino">
                         <h3>Chocolate Frappuccino</h3>
                         <p>Price: $4.51</p>
+                        <label>
+                            <input type="radio" name="chocolateFrappuccinoMood" value="hot" checked>Hot
+                        </label>
+                        <label>
+                            <input type="radio" name="chocolateFrappuccinoMood" value="cold">Cold
+                        </label>
+                        <!-- Size -->
+                        <label>
+                            <input type="radio" name="chocolateFrappuccinoSize" value="small" checked>S
+                        </label>
+                        <label>
+                            <input type="radio" name="chocolateFrappuccinoSize" value="medium">M
+                        </label>
+                        <label>
+                            <input type="radio" name="chocolateFrappuccinoSize" value="large">L
+                        </label>
                         <button class="btn-primary" onclick="addToBilling('Chocolate Frappuccino', 4.51)">Add to Billing</button>
                     </div>
                     <div class="product coffee">
-                        <img src="https://via.placeholder.com/150" alt="Peppermint Macchiato">
+                        <img src="coffelatte_frappuccino.jpg" alt="Chocolate Frappuccino">
+                        <h3>Coffe Latte Frappuccino</h3>
+                        <p>Price: $4.99</p>
+                        <label>
+                            <input type="radio" name="coffelatteFrappuccinoMood" value="hot" checked>Hot
+                        </label>
+                        <label>
+                            <input type="radio" name="coffelatteFrappuccinoMood" value="cold">Cold
+                        </label>
+                        <!-- Size -->
+                        <label>
+                            <input type="radio" name="coffelatteFrappuccinoSize" value="small" checked>S
+                        </label>
+                        <label>
+                            <input type="radio" name="coffelatteFrappuccinoSize" value="medium">M
+                        </label>
+                        <label>
+                            <input type="radio" name="coffelatteFrappuccinoSize" value="large">L
+                        </label>
+                        <button class="btn-primary" onclick="addToBilling('Chocolate Frappuccino', 4.51)">Add to Billing</button>
+                    </div>
+                    <div class="product coffee">
+                        <img src="peppermint_macchiato.jpg" alt="Peppermint Macchiato">
                         <h3>Peppermint Macchiato</h3>
                         <p>Price: $5.34</p>
+                        <label>
+                            <input type="radio" name="peppermintMacchiatoMood" value="hot" checked>Hot
+                        </label>
+                        <label>
+                            <input type="radio" name="peppermintMacchiatoMood" value="cold">Cold
+                        </label>
+                        <!-- Size -->
+                        <label>
+                            <input type="radio" name="peppermintMacchiatoSize" value="small" checked>S
+                        </label>
+                        <label>
+                            <input type="radio" name="peppermintMacchiatoSize" value="medium">M
+                        </label>
+                        <label>
+                            <input type="radio" name="peppermintMacchiatoSize" value="large">L
+                        </label>
                         <button class="btn-primary" onclick="addToBilling('Peppermint Macchiato', 5.34)">Add to Billing</button>
                     </div>
 
@@ -133,7 +233,7 @@
                         <button class="btn-primary" onclick="addToBilling('Ice Cream', 2.99)">Add to Billing</button>
                     </div>
             </div>
-        </div>
+        </main>
 
         <div class="billing">
             <h2>Bills</h2>  
